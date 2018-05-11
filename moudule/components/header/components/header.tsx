@@ -2,7 +2,7 @@ import * as React from 'react';
 import { hoc } from '../containers/header';
 import { IProps } from '../constants/header';
 import Link from 'next/link'
-import { menuConfig } from '../../../configs/header';
+import { menuConfig } from '../config';
   
 export class HeaderComponent extends React.Component<IProps, any> {
     render() {

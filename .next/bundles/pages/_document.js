@@ -1646,7 +1646,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document__ = __webpack_require__("./node_modules/next/document.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_document__);
 
-var _jsxFileName = "/Users/qinwen/study/ssr/next/pages/_document.js";
+var _jsxFileName = "/Users/qinwen/study/ssr/next-ssr-ts/pages/_document.js";
 
 
 (function () {
@@ -1792,7 +1792,7 @@ function (_Document) {
     return;
   }
 
-  reactHotLoader.register(MyDocument, "MyDocument", "/Users/qinwen/study/ssr/next/pages/_document.js");
+  reactHotLoader.register(MyDocument, "MyDocument", "/Users/qinwen/study/ssr/next-ssr-ts/pages/_document.js");
   leaveModule(module);
 })();
 

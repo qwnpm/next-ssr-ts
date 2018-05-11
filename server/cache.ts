@@ -16,7 +16,7 @@ function getCacheKey (req) {
     return `${req.url}`
   }
   
-export async function renderAndCache (app, req, res, pagePath, queryParams) {
+export async function renderAndCache (app, req, res, pagePath?:string, queryParams?:any) {
     
     const key = getCacheKey(req)
      // 如果在缓存中存在页面，则直接从缓存中读取，目前不完善，不能判断出错
