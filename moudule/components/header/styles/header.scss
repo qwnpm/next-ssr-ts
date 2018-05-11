@@ -1,0 +1,57 @@
+@import "../../../../assets/styles/public.scss";
+$height: 50px;
+.ui-header {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    height: $height;
+    width: 100%;
+    min-width: 1200px;
+    ul {
+        display: inline-block;
+        .menu {
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 50px;
+            @include fontfamily-PingFang-SC-Regular;
+            font-size: 18px;
+            color: #000000;
+            height: $height;
+            line-height: $height;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                @include fontfamily-PingFang-SC-Medium;
+                font-size: 18px;
+                color: #D3B4A1;
+                border-bottom: 3px solid #D3B4A1;
+            }
+        }
+        @media all and (-ms-high-contrast:none) { 
+            .menu{
+                line-height: 55px;
+            }
+        } 
+    }
+    .logo {
+        position: absolute;
+        left: 60px;
+    }
+    .contact {
+        position: absolute;
+        right: 94px;
+        top: 0;
+        @include fontfamily-PingFang-SC-Regular;
+        font-size: 16px;
+        color: #333333;
+        line-height: $height;
+        svg{
+            margin-top: 15px;
+        }
+        h6 {
+            margin-left: 5.4px;
+            display: inline-block;
+        }
+    }
+}
