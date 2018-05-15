@@ -15,5 +15,5 @@ export function convert (app,server) {
     server.get('/', (req, res) =>  renderAndCache(app, req, res, '/',null))
     // server.get('/developer', (req, res) => renderAndCache(app, req, res, '/developer',{id: req.params.id}))
     server.get('*', (req, res) =>  handle(req, res))
-
+    
 }
