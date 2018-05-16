@@ -19,8 +19,12 @@
     ],
     "lib": [
       "dom",
-      "es2015",
-      "es2016"
+      "es2015"
+      // "es2016"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

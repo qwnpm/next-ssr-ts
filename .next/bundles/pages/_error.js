@@ -35,7 +35,7 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
-/***/ "./pages/_error.js":
+/***/ "./pages/_error.tsx":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43,7 +43,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Error; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/cjs/react.development.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = "/Users/qinwen/study/ssr/next-ssr-ts/pages/_error.js";
+var _jsxFileName = "/Users/qinwen/study/ssr/next-ssr-ts/pages/_error.tsx";
 
 (function () {
   var enterModule = __webpack_require__("./node_modules/react-hot-loader/index.js").enterModule;
@@ -81,10 +81,10 @@ function (_React$Component) {
   _createClass(Error, [{
     key: "render",
     value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 10
         }
       }, "\u50BB\u7F3A\uFF0C\u62A5\u9519\u4E86", this.props.statusCode ? "An error ".concat(this.props.statusCode, " occurred on server") : 'An error occurred on client');
     }
@@ -120,7 +120,7 @@ function (_React$Component) {
     return;
   }
 
-  reactHotLoader.register(Error, "Error", "/Users/qinwen/study/ssr/next-ssr-ts/pages/_error.js");
+  reactHotLoader.register(Error, "Error", "/Users/qinwen/study/ssr/next-ssr-ts/pages/_error.tsx");
   leaveModule(module);
 })();
 
@@ -150,7 +150,7 @@ function (_React$Component) {
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./pages/_error.js");
+module.exports = __webpack_require__("./pages/_error.tsx");
 
 
 /***/ })

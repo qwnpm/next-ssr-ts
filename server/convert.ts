@@ -10,10 +10,11 @@ import { renderAndCache } from "./cache";
 //         inUrl:'/'
 //     }
 // ]
+
 export function convert (app,server) {
     const handle = app.getRequestHandler()
     server.get('/', (req, res) =>  renderAndCache(app, req, res, '/',null))
-    // server.get('/developer', (req, res) => renderAndCache(app, req, res, '/developer',{id: req.params.id}))
+    server.get('/developer', (req, res) => renderAndCache(app, req, res, '/developer',{id: req.params.id}))
     server.get('*', (req, res) =>  handle(req, res))
     
 }

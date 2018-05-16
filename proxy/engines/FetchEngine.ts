@@ -1,7 +1,7 @@
 import { BaseEngine } from "modelproxy";
 import { IProxyCtx } from "modelproxy/out/models/proxyctx";
-import fetch from 'isomorphic-fetch'; //请求
 import { IInterfaceModel } from "modelproxy/out/models/interface";
+import fetch from 'isomorphic-fetch'; //请求
 
 //超时
 const _fetch = (fetchPromise: Promise<any>, timeout: number) => {
@@ -31,12 +31,11 @@ const _fetch = (fetchPromise: Promise<any>, timeout: number) => {
 
 
 export class FetchEngine extends BaseEngine {
-    constructor() {
+    constructor(){
         super();
-        this.init();
     }
-
-    init() {
+    
+    public init(): void {
         this.use(async (ctx: IProxyCtx, next) => {
             let bodyParams = new URLSearchParams();
             let body, headers: any = { "X-Requested-With": "XMLHttpRequest" };
@@ -99,7 +98,7 @@ export class FetchEngine extends BaseEngine {
      * @param instance 接口的信息
      * @param options  调用接口的参数
      */
-    async proxy(instance: IInterfaceModel, options: any): Promise<any> {
+    public async proxy(instance: IInterfaceModel, options: any): Promise<any> {
         const fn = this.callback(() => { });
         const ctx: IProxyCtx = {
             instance: instance,

@@ -1,3 +1,3 @@
-import React from 'react'
+import DeveloperHoc from "../moudule/developer/components/developer";
 
-export default () => <div>a</div>
+export default DeveloperHoc
