@@ -13,14 +13,20 @@ var host = "https://jsonplaceholder.typicode.com";
         "dev": host
     },
     "interfaces": [{
-        "path": "/posts/{/params}",
+        "path": "/posts/:id",
         "method": "get",
         "key": "post1",
         "title": "获取资料"
     },{
-        "path": "/posts/{/params}/comments",
+        "path": "/posts/:id/comments",
         "method": "get",
         "key": "post2",
         "title": "获评论"
+    },{
+        "path": "/users/:id",
+        "method": "get",
+        "key": "getUserInfo",
+        "title": "获得用户信息"
+       
     }]
 }
