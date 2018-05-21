@@ -1,10 +1,3 @@
-import React from 'react'
-import { HeaderComponent } from '../moudule/components/header';
+import HomeHoc from "../moudule/home";
 
-export default class Post extends React.Component<any,any> {
-  public render(){
-    return  <div>
-       <HeaderComponent />
-    </div>
-  }
-}
+export default HomeHoc

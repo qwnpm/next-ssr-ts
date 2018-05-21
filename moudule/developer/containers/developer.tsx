@@ -7,7 +7,6 @@ import proxy from "../../../proxy";
 export const hoc = compose<IProps, any>(
     setStatic('getInitialProps',  async ({ req }) => {
         let result
-        console.log("====getInitialProps =====")
         await proxy.executeAll({
             article: proxy.execute.bind(proxy, "http1", "post1",  {params:{id:1}}),
             comments: proxy.execute.bind(proxy, "http1", "post2",  {params:{id:1}}),

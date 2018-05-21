@@ -19,7 +19,8 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>lueluelue</title>
-          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <link rel="stylesheet" href="/_next/static/style.css" />
+          {/* <style dangerouslySetInnerHTML={{ __html: this.props.css }} /> */}
         </Head>
         <body>
           <Main />

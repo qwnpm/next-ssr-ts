@@ -3,20 +3,17 @@ export const menuConfig = [
         title: '首页',
         url:''
     }, {
-        title: '第二开发商',
+        title: '沸点',
         url:'/developer',
         serverUrl:"/developer"
     }, {
-        title: '精装产品',
-        url:'/product.html'
+        title: '小册',
+        url:'/list'
     }, {
-        title: '“慧”设计',
+        title: '开源库',
         url:'/design.html'
     }, {
-        title: '案例',
+        title: '活动',
         url:'/case.html'
-    }, {
-        title: '合作伙伴',
-        url:'/cooperate.html'
     }
 ]

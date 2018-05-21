@@ -1,10 +1,10 @@
 import React from 'react'
-import { hoc } from '../containers/developer';
-import "../styles/developer.scss";
-class Developer extends React.Component<any,any> {
+import { hoc } from '../containers/recommend';
+
+class Recommend extends React.Component<any,any> {
   public render(){
     const { article, comments, user } = this.props
-    return  <div className="m-developer">
+    return  <div>
                 <h1>{article && article.title}</h1>
                 <div>
                {user && <a href={`mailto:${user.email}`}>{user.name}</a>} 
@@ -23,5 +23,5 @@ class Developer extends React.Component<any,any> {
   }
 }
 
-const DeveloperHoc = hoc(Developer);
-export default DeveloperHoc;
+const RecommendHoc = hoc(Recommend);
+export default RecommendHoc;
