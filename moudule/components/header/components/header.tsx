@@ -9,13 +9,13 @@ export class HeaderComponent extends React.Component<IProps, any> {
     render() {
         return (
                <div className={css.uiHeader}>
-                    {/* <div className="logo">
-                        <span><IconComments type="logo" width={157.7} height={50}/></span>
-                    </div> */}
+                    <div >
+                        <img src="//gold-cdn.xitu.io/v3/static/img/logo.a7995ad.svg" alt="掘金icon" className={css.logo}/>
+                    </div>
                     <ul>
                         {menuConfig.map(menu=>{
                             return  <Link key={menu.url} as={`${menu.url}`} href={`${menu.serverUrl}`}>
-                                        <span className={css.title}>{menu.title}</span>
+                                        <li className={css.title}>{menu.title}</li>
                                     </Link>
                         })
                         }

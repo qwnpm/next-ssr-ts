@@ -9,9 +9,26 @@ $height:  5rem;
     border-bottom: 1px solid #f1f1f1;
     color: #909090;
     z-index: 250;
-    .title{
-        color: red;
+    .logo{
+        display: inline-block;
+        left: 60px;
+        img{
+            display: inline-block;
+        }
     }
+    ul{
+        display: flex;
+        height: 100%;
+        .title{
+            align-items:center;
+            font-size: 1.33rem;
+            justify-content: center;
+            cursor: pointer;
+            padding: 0 1.6rem;
+            line-height: $height;
+        }
+    }
+  
 }
 
 

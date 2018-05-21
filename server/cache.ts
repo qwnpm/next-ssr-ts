@@ -1,4 +1,5 @@
 const LRUCache = require('lru-cache')
+const flag = false;
 
 // This is where we cache our rendered HTML pages
 const ssrCache = new LRUCache({
@@ -20,7 +21,7 @@ export async function renderAndCache (app, req, res, pagePath?:string, queryPara
     
     const key = getCacheKey(req)
      // 如果在缓存中存在页面，则直接从缓存中读取，目前不完善，不能判断出错
-      if (ssrCache.has(key)) {
+      if (flag && ssrCache.has(key)) {
             console.log(`CACHE HIT: ${key}`)
             res.send(ssrCache.get(key))
             return    

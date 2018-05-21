@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document'
+import stylesheet from '../styles/index.scss'
 
 export default class MyDocument extends Document {
   static async getInitialProps ({ renderPage }) {
@@ -23,6 +24,7 @@ export default class MyDocument extends Document {
           {/* <style dangerouslySetInnerHTML={{ __html: this.props.css }} /> */}
         </Head>
         <body>
+          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
           <Main />
           <NextScript />
         </body>
